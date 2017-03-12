@@ -2,10 +2,10 @@ clear all;
 clc;
 
 %% Import Image %% Make Image corrupted
-RGB = imread('.\data\2.jpg');% convert given file into RGB
+RGB = imread('.\data\2.jpg'); % convert given file into RGB
 RGB = imnoise(RGB,'salt & pepper',0.02);
-t = rgb2gray(RGB);% convert RGB file into gray image
-t = im2double(t);% convert uint8 value to double for computation
+t = rgb2gray(RGB); % convert RGB file into gray image
+t = im2double(t); % convert uint8 value to double for computation
 
 %% require principal axes
 k = 200;
