@@ -38,7 +38,7 @@ W = randn(height,k);
 sigma_square = randn(1,1);
 
 disp('EM Algorithm running...');
-for i=1:iter
+for j=1:iter
     % Find M = W'W + Sigma^2*I
     M = W'*W + sigma_square*eye(k,k); 
     
